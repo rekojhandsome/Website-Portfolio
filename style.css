@@ -262,8 +262,6 @@ p {
 	animation-delay: 2.5s;
 }
 
-/* End Hero Section */
-
 /* Services Section */
 #services .services {
 	flex-direction: column;
@@ -785,3 +783,66 @@ p {
 #certificates .certificate-item:hover {
   transform: scale(1.05);
 }
+
+/* Skills Section */
+#skills {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.skills-header {
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.skills-header .section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: crimson;
+  margin-bottom: 20px;
+}
+
+.skills-header .section-title span {
+  color: #333;
+}
+
+.skills-header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.skill-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.skill-card p {
+  margin: 0;
+  font-weight: 600;
+  color: #333;
+}
+/* End Skills Section */
