@@ -633,38 +633,56 @@ p {
 	}
 	/* End About */
 
-	/* contact  */
-	#contact .contact {
-		flex-direction: column;
-		padding: 100px 0;
-		align-items: center;
-		justify-content: center;
-		min-width: 20vh;
-	}
-	#contact .contact-items {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		margin: 0;
-	}
-	#contact .contact-item {
-		width: 30%;
-		margin: 0;
-		flex-direction: row;
-	}
-	#contact .contact-item .icon {
-		height: 100px;
-		width: 100px;
-	}
-	#contact .contact-item .icon img {
-		object-fit: contain;
-	}
-	#contact .contact-item .contact-info {
-		width: 100%;
-		text-align: left;
-		padding-left: 20px;
-	}
+#contact .contact {
+  flex-direction: column;
+  padding: 100px 20px 120px 20px; /* Added bottom padding */
+  align-items: center;
+  justify-content: center;
+  min-width: 20vh;
+}
+
+#contact .contact > div:first-child {
+  margin-bottom: 60px; /* Spacing below the Contact title */
+}
+
+#contact .section-title {
+  margin-bottom: 0; /* Optional: reset if margin is also applied here */
+}
+
+#contact .contact-items {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0;
+  flex-wrap: wrap; /* Optional: makes it responsive for small screens */
+}
+
+#contact .contact-item {
+  width: 30%;
+  margin: 20px 0; /* Added vertical spacing between items */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#contact .contact-item .icon {
+  height: 100px;
+  width: 100px;
+}
+
+#contact .contact-item .icon img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+#contact .contact-item .contact-info {
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+}
+
 	/* End contact  */
 }
 /* End Media Query For Tablet */
